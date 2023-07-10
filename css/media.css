@@ -1,0 +1,54 @@
+@media screen and (max-width:1000px) and (min-width:768px){
+
+    #Home .layer h1{
+        font-size: 4rem;
+    }
+    .carousel-control-prev {
+        left: -150px;
+    }
+    .carousel-control-next {
+        right: -150px;
+    }
+    .navbar .navbar-collapse{
+        background-color: #fff;
+    }
+    .navbar .navbar-nav .nav-link{
+        color: black;
+    }
+    
+}
+@media screen and (max-width:766px) and (min-width:500px){
+    #Home .layer h1{
+        font-size: 2rem;
+    }
+    .carousel-control-prev {
+        left: 5px;
+    }
+    .carousel-control-next {
+        right: 5px;
+    }
+    .navbar .navbar-collapse{
+        background-color: #fff;
+    }
+    .navbar .navbar-nav .nav-link{
+        color: black;
+    }
+    
+}
+@media screen and (max-width:499px) {
+    #Home .layer h1{
+        font-size: 1rem;
+    }
+    .carousel-control-prev {
+        left: 10px;
+    }
+    .carousel-control-next {
+        right: 10px;
+    }
+    .navbar .navbar-collapse{
+    background-color: #fff;
+}
+.navbar .navbar-nav .nav-link{
+    color: black;
+}
+}

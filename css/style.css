@@ -1,0 +1,375 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+   
+}
+.container{
+    width: 80%;
+}
+.navbar .navbar-nav .nav-link{
+    color: white;
+  position: relative;
+}
+.navbar .navbar-toggler {
+    color: transparent;
+}
+.navbar .navbar-nav .nav-link.active::after{
+    content: "";
+    width: 80%;
+    height: 2px;
+    background-color: white;
+    position: absolute;
+    left: 8px;
+    bottom: 8px;
+    transition: all 1s;
+}
+
+#Home{
+    background-image: url(../img/bg.jpg);
+    width: 100%;
+    height: 100vh;
+    background-position: center center;
+    background-size: cover;
+    position: relative;
+}
+#Home .layer{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0,0.6);
+}
+#Home .layer h5{ 
+    font-family: 'Montserrat', sans-serif;
+   font-weight: 800;
+   font-size: 50px;
+      
+}
+#Home .layer h1{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 100;
+    font-size: 4.4rem;
+}
+#Home .layer h1::after{
+    content: "";
+    animation: typing 4s infinite;
+    font-weight: 400;
+}
+@keyframes typing{
+    0%{
+        content: "Larry|"
+    }
+    10%{
+        content: "Larry Da|"
+    }
+    15%{
+        content: "Larry Dani|"
+    }
+    20%{
+        content: "Larry Daniels|"
+    }
+    25%{
+        content: "Larry Daniels|"
+    }
+    35%{
+        content: "Larry Dani|"
+    }
+    45%{
+        content: "Larry Da|"
+    }
+    55%{
+        content: "Larry |"
+    }
+    60%{
+        content: " |"
+    }
+    60%{
+        content: "|"
+    }
+    75%{
+        content: "De|"
+    }
+    85%{
+        content: "Desi|"
+    }
+    95%{
+        content: "Designer|"
+    }
+    100%{
+        content: "Designer|"
+    }
+}
+
+#About,#Services{
+    padding: 100px 0;
+    padding-bottom:70px ;
+}
+
+#About .row .image{
+    
+    position: relative;
+}
+#About .row .image img{
+    margin-bottom: 30px;
+}
+
+#About .row .image::after{
+    content: "";
+    width: 65%;
+    height: 65%;
+    position: absolute; 
+    left: 0;
+    bottom: -10px;
+    background-image: url(../img/dots.png);
+    background-repeat: repeat;
+    z-index: -1;
+
+    
+}
+#About .row .contain{
+    font-family: 'Montserrat', sans-serif;
+}
+#About .row .contain .text1{
+    color: #999;
+    letter-spacing: 2px
+}
+#About .row .contain .text2{
+    color:#748182 ;
+}
+#About .row .contain .skills .progress{
+   height: 22px;
+   box-shadow: 0px 2px 7px rgb(0 0 0 / 15%) inset;
+}
+#About .row .contain .butoom .btn{
+    font-size: 13px; 
+
+    height:  40px;
+  
+
+}
+#About .row .contain .butoom .btn1{
+    transition: all 0.5s;
+}
+#About .row .contain .butoom .btn1:hover{
+ background-color: white;
+ color: black;
+}
+
+
+
+ .head h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+    font-size: 40px;   
+    position: relative;
+    z-index: 4;
+}
+
+ .head h3::after{
+   content: "";
+   width: 100%;
+   height: 30px;
+   position: absolute; 
+   left: 0;
+   bottom: -10px;
+   background-image: url(../img/dots.png);
+   background-repeat: repeat;
+   z-index: -1;
+}
+#Services  .row .item{
+    padding: 50px 20px;
+    background: #fff;
+    box-shadow: 0px 10px 30px -8px rgb(0 0 0 / 10%);
+    border-radius: 5px;
+    transition: all 1s;
+}
+#Services  .row .item span{
+    border-radius: 50%; 
+    padding: 1.5em; 
+    background-color: #f4f4f4;
+    color: black;
+}
+#Services  .row .item:hover span{
+    background-color: black;
+    color: white;
+}
+#Services  .row .item h6{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+    font-size: 18px;
+  
+}
+#Services  .row .item p{
+ word-spacing: 2px;
+ font-size: 14px;
+}
+
+#Works .row .project .layer1{
+    background-color: rgba(255, 255, 255,0.9);
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    right: 5px;
+    bottom: 5px;
+    opacity: 0;
+    transition: all 0.5s;
+    
+}
+#Works .row .project:hover .layer1{
+    opacity: 1;
+}
+#Works .row .project .layer1:hover .small-part h6{
+    margin-bottom: 5px;  
+}
+#Works .row .project .layer1 .small-part h6{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin-bottom: 15px;  
+    transition: all 0.5s ;
+}
+
+#Works .row .project .layer1 .small-part .icon i{
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    line-height: 28px;
+    border-radius: 50%;
+    border: 1px solid #111;
+    background: #111;
+    color: #eee;
+    transition: all 0.5s;
+}
+#Works .row .project .layer1 .small-part .icon i:hover{
+    background-color: white;
+    color: black;
+}
+.btn-close{
+    transition: all 0.5s;
+}
+.btn-close:hover {
+    color: white ;
+}  
+.carousel-control-prev {
+    left: -350px;
+}
+.carousel-control-next {
+    right: -350px;
+}
+
+#Works .nav-pills  .nav-link{
+    color: #111;
+    font-weight: 700;
+    margin-left: 5px;
+    position: relative;   
+    border: none; 
+    background-color: #fff;  
+}
+
+#Works .nav-pills  .nav-link.active::after{
+    content: "";
+    width: 60%;
+    height: 2.5px;
+    background-color: rgb(14, 14, 14);
+    position: absolute;
+    left: 15px;
+    bottom: 6px; 
+    transition: all 0.5s;
+} 
+#Works .nav-pills  .nav-link:hover::after {
+    width: 0%;
+}
+
+#Clients .conatin p{
+    word-spacing: 2px;
+}
+#Clients .conatin h6{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    margin: 30px 0 5px;
+}
+#Clients .conatin span{
+    font-weight: 600;
+    font-size: 12px;
+    
+}
+.carousel-indicators [data-bs-target] {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color:rgb(209, 206, 206);
+    transition: all 0.1s;
+}
+.carousel-indicators [data-bs-target]:hover{
+    background-color:#869791;
+}
+
+
+.spical .row .part h2{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+}
+
+#Blog  .card h6{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 12px;
+}
+
+#Blog  .card h5 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+    font-size: 20px;
+    line-height: 1.6;
+   
+}
+#Blog  .card img{
+    transition: all 1s;
+}
+
+#Blog  .card img:hover{
+    transform: scale(1.5);
+}
+
+#Contact .row .items span{
+    border-radius: 50%; 
+    padding: 1.2em; 
+    background-color: #f4f4f4;
+    color: black;
+}
+#Contact  .row .items:hover span{
+    background-color: black;
+    color: white;
+}
+#Contact .row .items h6{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+    font-size: 18px;
+  
+}
+#Contact  .row .items p{
+ word-spacing: 2px;
+ font-size: 14px;
+}
+.form-control{
+    transition: all 0s;
+}
+.form-control:hover{
+    border-color: transparent;
+}
+#Contact .btn{
+    transition: all 0.5s;
+}
+#Contact .btn:hover{
+  background-color: white;
+  color: #111;
+}
+
+.owl-theme .owl-nav{
+    color:transparent;
+    margin-top: 5px;
+}
